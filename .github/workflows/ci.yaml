@@ -18,7 +18,7 @@ jobs:
           key: dependencies-v1-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
       - name: Install dependencies 📦
-        run: npm i
+        run: npm ci 
 
       - name: Build the app 🏗
         run: npm run build
